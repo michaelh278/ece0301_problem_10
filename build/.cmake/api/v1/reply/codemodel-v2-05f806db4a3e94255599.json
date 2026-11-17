@@ -45,7 +45,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "direct_download::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-direct_download-Debug-44639e2b459b70f76c64.json",
+					"jsonFile" : "target-direct_download-Debug-f077ccb05dffd18901e3.json",
 					"name" : "direct_download",
 					"projectIndex" : 0
 				},
@@ -59,14 +59,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "submission::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-submission-Debug-584c1e22274c6e30a574.json",
+					"jsonFile" : "target-submission-Debug-89f4c71be0f9be8b50cd.json",
 					"name" : "submission",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "visualize::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-visualize-Debug-8b2eff991566c2e46407.json",
+					"jsonFile" : "target-visualize-Debug-95b77cdafb600ae58f5f.json",
 					"name" : "visualize",
 					"projectIndex" : 0
 				}
@@ -77,7 +77,7 @@
 	"paths" : 
 	{
 		"build" : "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build",
-		"source" : "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10"
+		"source" : "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10"
 	},
 	"version" : 
 	{

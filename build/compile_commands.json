@@ -1,62 +1,62 @@
 [
 {
   "directory": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/test_network.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/test_network.cpp\"",
-  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/test_network.cpp",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/test_network.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/test_network.cpp\"",
+  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/test_network.cpp",
   "output": "CMakeFiles/problem10_tests.dir/test_network.cpp.o"
 },
 {
   "directory": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/VoltageSource.cpp\"",
-  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/VoltageSource.cpp",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/VoltageSource.cpp\"",
+  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/VoltageSource.cpp",
   "output": "CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o"
 },
 {
   "directory": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/CurrentSource.cpp\"",
-  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/CurrentSource.cpp",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/CurrentSource.cpp\"",
+  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/CurrentSource.cpp",
   "output": "CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o"
 },
 {
   "directory": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/Resistor.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Resistor.cpp\"",
-  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Resistor.cpp",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/Resistor.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Resistor.cpp\"",
+  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Resistor.cpp",
   "output": "CMakeFiles/problem10_tests.dir/Resistor.cpp.o"
 },
 {
   "directory": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/VoltageDivider.cpp\"",
-  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/VoltageDivider.cpp",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/VoltageDivider.cpp\"",
+  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/VoltageDivider.cpp",
   "output": "CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o"
 },
 {
   "directory": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/CurrentDivider.cpp\"",
-  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/CurrentDivider.cpp",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/CurrentDivider.cpp\"",
+  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/CurrentDivider.cpp",
   "output": "CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o"
 },
 {
   "directory": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/PracticalVsCircuit.cpp\"",
-  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/PracticalVsCircuit.cpp",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/PracticalVsCircuit.cpp\"",
+  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/PracticalVsCircuit.cpp",
   "output": "CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o"
 },
 {
   "directory": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/Node.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Node.cpp\"",
-  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Node.cpp",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/Node.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Node.cpp\"",
+  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Node.cpp",
   "output": "CMakeFiles/problem10_tests.dir/Node.cpp.o"
 },
 {
   "directory": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/Component.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Component.cpp\"",
-  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Component.cpp",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/Component.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Component.cpp\"",
+  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Component.cpp",
   "output": "CMakeFiles/problem10_tests.dir/Component.cpp.o"
 },
 {
   "directory": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/Network.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Network.cpp\"",
-  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Network.cpp",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/problem10_tests.dir/Network.cpp.o -c \"/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Network.cpp\"",
+  "file": "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Network.cpp",
   "output": "CMakeFiles/problem10_tests.dir/Network.cpp.o"
 }
 ]

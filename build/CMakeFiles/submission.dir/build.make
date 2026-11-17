@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build"
@@ -67,7 +67,7 @@ include CMakeFiles/submission.dir/compiler_depend.make
 include CMakeFiles/submission.dir/progress.make
 
 CMakeFiles/submission:
-	cd "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10" && /usr/bin/cmake -E tar cfv /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/build/problem10_submission.zip --format=zip test_network.cpp VoltageSource.cpp CurrentSource.cpp Resistor.cpp VoltageDivider.cpp CurrentDivider.cpp PracticalVsCircuit.cpp VoltageSource.hpp CurrentSource.hpp Resistor.hpp VoltageDivider.hpp CurrentDivider.hpp PracticalVsCircuit.hpp
+	cd "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10" && /usr/bin/cmake -E tar cfv /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/build/problem10_submission.zip --format=zip test_network.cpp VoltageSource.cpp CurrentSource.cpp Resistor.cpp VoltageDivider.cpp CurrentDivider.cpp PracticalVsCircuit.cpp VoltageSource.hpp CurrentSource.hpp Resistor.hpp VoltageDivider.hpp CurrentDivider.hpp PracticalVsCircuit.hpp
 
 submission: CMakeFiles/submission
 submission: CMakeFiles/submission.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/submission.dir/clean:
 .PHONY : CMakeFiles/submission.dir/clean
 
 CMakeFiles/submission.dir/depend:
-	cd "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles/submission.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles/submission.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/submission.dir/depend
 

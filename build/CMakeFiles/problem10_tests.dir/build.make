@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build"
@@ -70,144 +70,144 @@ include CMakeFiles/problem10_tests.dir/progress.make
 include CMakeFiles/problem10_tests.dir/flags.make
 
 CMakeFiles/problem10_tests.dir/test_network.cpp.o: CMakeFiles/problem10_tests.dir/flags.make
-CMakeFiles/problem10_tests.dir/test_network.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/test_network.cpp
+CMakeFiles/problem10_tests.dir/test_network.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Problems/problem10/test_network.cpp
 CMakeFiles/problem10_tests.dir/test_network.cpp.o: CMakeFiles/problem10_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/problem10_tests.dir/test_network.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/test_network.cpp.o -MF CMakeFiles/problem10_tests.dir/test_network.cpp.o.d -o CMakeFiles/problem10_tests.dir/test_network.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/test_network.cpp"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/test_network.cpp.o -MF CMakeFiles/problem10_tests.dir/test_network.cpp.o.d -o CMakeFiles/problem10_tests.dir/test_network.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/test_network.cpp"
 
 CMakeFiles/problem10_tests.dir/test_network.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/problem10_tests.dir/test_network.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/test_network.cpp" > CMakeFiles/problem10_tests.dir/test_network.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/test_network.cpp" > CMakeFiles/problem10_tests.dir/test_network.cpp.i
 
 CMakeFiles/problem10_tests.dir/test_network.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/problem10_tests.dir/test_network.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/test_network.cpp" -o CMakeFiles/problem10_tests.dir/test_network.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/test_network.cpp" -o CMakeFiles/problem10_tests.dir/test_network.cpp.s
 
 CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o: CMakeFiles/problem10_tests.dir/flags.make
-CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/VoltageSource.cpp
+CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Problems/problem10/VoltageSource.cpp
 CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o: CMakeFiles/problem10_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o -MF CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o.d -o CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/VoltageSource.cpp"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o -MF CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o.d -o CMakeFiles/problem10_tests.dir/VoltageSource.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/VoltageSource.cpp"
 
 CMakeFiles/problem10_tests.dir/VoltageSource.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/problem10_tests.dir/VoltageSource.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/VoltageSource.cpp" > CMakeFiles/problem10_tests.dir/VoltageSource.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/VoltageSource.cpp" > CMakeFiles/problem10_tests.dir/VoltageSource.cpp.i
 
 CMakeFiles/problem10_tests.dir/VoltageSource.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/problem10_tests.dir/VoltageSource.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/VoltageSource.cpp" -o CMakeFiles/problem10_tests.dir/VoltageSource.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/VoltageSource.cpp" -o CMakeFiles/problem10_tests.dir/VoltageSource.cpp.s
 
 CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o: CMakeFiles/problem10_tests.dir/flags.make
-CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/CurrentSource.cpp
+CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Problems/problem10/CurrentSource.cpp
 CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o: CMakeFiles/problem10_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o -MF CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o.d -o CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/CurrentSource.cpp"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o -MF CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o.d -o CMakeFiles/problem10_tests.dir/CurrentSource.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/CurrentSource.cpp"
 
 CMakeFiles/problem10_tests.dir/CurrentSource.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/problem10_tests.dir/CurrentSource.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/CurrentSource.cpp" > CMakeFiles/problem10_tests.dir/CurrentSource.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/CurrentSource.cpp" > CMakeFiles/problem10_tests.dir/CurrentSource.cpp.i
 
 CMakeFiles/problem10_tests.dir/CurrentSource.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/problem10_tests.dir/CurrentSource.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/CurrentSource.cpp" -o CMakeFiles/problem10_tests.dir/CurrentSource.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/CurrentSource.cpp" -o CMakeFiles/problem10_tests.dir/CurrentSource.cpp.s
 
 CMakeFiles/problem10_tests.dir/Resistor.cpp.o: CMakeFiles/problem10_tests.dir/flags.make
-CMakeFiles/problem10_tests.dir/Resistor.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Resistor.cpp
+CMakeFiles/problem10_tests.dir/Resistor.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Problems/problem10/Resistor.cpp
 CMakeFiles/problem10_tests.dir/Resistor.cpp.o: CMakeFiles/problem10_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/problem10_tests.dir/Resistor.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/Resistor.cpp.o -MF CMakeFiles/problem10_tests.dir/Resistor.cpp.o.d -o CMakeFiles/problem10_tests.dir/Resistor.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Resistor.cpp"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/Resistor.cpp.o -MF CMakeFiles/problem10_tests.dir/Resistor.cpp.o.d -o CMakeFiles/problem10_tests.dir/Resistor.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Resistor.cpp"
 
 CMakeFiles/problem10_tests.dir/Resistor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/problem10_tests.dir/Resistor.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Resistor.cpp" > CMakeFiles/problem10_tests.dir/Resistor.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Resistor.cpp" > CMakeFiles/problem10_tests.dir/Resistor.cpp.i
 
 CMakeFiles/problem10_tests.dir/Resistor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/problem10_tests.dir/Resistor.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Resistor.cpp" -o CMakeFiles/problem10_tests.dir/Resistor.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Resistor.cpp" -o CMakeFiles/problem10_tests.dir/Resistor.cpp.s
 
 CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o: CMakeFiles/problem10_tests.dir/flags.make
-CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/VoltageDivider.cpp
+CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Problems/problem10/VoltageDivider.cpp
 CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o: CMakeFiles/problem10_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o -MF CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o.d -o CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/VoltageDivider.cpp"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o -MF CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o.d -o CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/VoltageDivider.cpp"
 
 CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/VoltageDivider.cpp" > CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/VoltageDivider.cpp" > CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.i
 
 CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/VoltageDivider.cpp" -o CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/VoltageDivider.cpp" -o CMakeFiles/problem10_tests.dir/VoltageDivider.cpp.s
 
 CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o: CMakeFiles/problem10_tests.dir/flags.make
-CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/CurrentDivider.cpp
+CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Problems/problem10/CurrentDivider.cpp
 CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o: CMakeFiles/problem10_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o -MF CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o.d -o CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/CurrentDivider.cpp"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o -MF CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o.d -o CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/CurrentDivider.cpp"
 
 CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/CurrentDivider.cpp" > CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/CurrentDivider.cpp" > CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.i
 
 CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/CurrentDivider.cpp" -o CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/CurrentDivider.cpp" -o CMakeFiles/problem10_tests.dir/CurrentDivider.cpp.s
 
 CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o: CMakeFiles/problem10_tests.dir/flags.make
-CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/PracticalVsCircuit.cpp
+CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Problems/problem10/PracticalVsCircuit.cpp
 CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o: CMakeFiles/problem10_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o -MF CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o.d -o CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/PracticalVsCircuit.cpp"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o -MF CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o.d -o CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/PracticalVsCircuit.cpp"
 
 CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/PracticalVsCircuit.cpp" > CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/PracticalVsCircuit.cpp" > CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.i
 
 CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/PracticalVsCircuit.cpp" -o CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/PracticalVsCircuit.cpp" -o CMakeFiles/problem10_tests.dir/PracticalVsCircuit.cpp.s
 
 CMakeFiles/problem10_tests.dir/Node.cpp.o: CMakeFiles/problem10_tests.dir/flags.make
-CMakeFiles/problem10_tests.dir/Node.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Node.cpp
+CMakeFiles/problem10_tests.dir/Node.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Problems/problem10/Node.cpp
 CMakeFiles/problem10_tests.dir/Node.cpp.o: CMakeFiles/problem10_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/problem10_tests.dir/Node.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/Node.cpp.o -MF CMakeFiles/problem10_tests.dir/Node.cpp.o.d -o CMakeFiles/problem10_tests.dir/Node.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Node.cpp"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/Node.cpp.o -MF CMakeFiles/problem10_tests.dir/Node.cpp.o.d -o CMakeFiles/problem10_tests.dir/Node.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Node.cpp"
 
 CMakeFiles/problem10_tests.dir/Node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/problem10_tests.dir/Node.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Node.cpp" > CMakeFiles/problem10_tests.dir/Node.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Node.cpp" > CMakeFiles/problem10_tests.dir/Node.cpp.i
 
 CMakeFiles/problem10_tests.dir/Node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/problem10_tests.dir/Node.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Node.cpp" -o CMakeFiles/problem10_tests.dir/Node.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Node.cpp" -o CMakeFiles/problem10_tests.dir/Node.cpp.s
 
 CMakeFiles/problem10_tests.dir/Component.cpp.o: CMakeFiles/problem10_tests.dir/flags.make
-CMakeFiles/problem10_tests.dir/Component.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Component.cpp
+CMakeFiles/problem10_tests.dir/Component.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Problems/problem10/Component.cpp
 CMakeFiles/problem10_tests.dir/Component.cpp.o: CMakeFiles/problem10_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/problem10_tests.dir/Component.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/Component.cpp.o -MF CMakeFiles/problem10_tests.dir/Component.cpp.o.d -o CMakeFiles/problem10_tests.dir/Component.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Component.cpp"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/Component.cpp.o -MF CMakeFiles/problem10_tests.dir/Component.cpp.o.d -o CMakeFiles/problem10_tests.dir/Component.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Component.cpp"
 
 CMakeFiles/problem10_tests.dir/Component.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/problem10_tests.dir/Component.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Component.cpp" > CMakeFiles/problem10_tests.dir/Component.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Component.cpp" > CMakeFiles/problem10_tests.dir/Component.cpp.i
 
 CMakeFiles/problem10_tests.dir/Component.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/problem10_tests.dir/Component.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Component.cpp" -o CMakeFiles/problem10_tests.dir/Component.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Component.cpp" -o CMakeFiles/problem10_tests.dir/Component.cpp.s
 
 CMakeFiles/problem10_tests.dir/Network.cpp.o: CMakeFiles/problem10_tests.dir/flags.make
-CMakeFiles/problem10_tests.dir/Network.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Network.cpp
+CMakeFiles/problem10_tests.dir/Network.cpp.o: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall\ 2026\ Notes/ECE\ 0301/problems/problem10/Problems/problem10/Network.cpp
 CMakeFiles/problem10_tests.dir/Network.cpp.o: CMakeFiles/problem10_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/problem10_tests.dir/Network.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/Network.cpp.o -MF CMakeFiles/problem10_tests.dir/Network.cpp.o.d -o CMakeFiles/problem10_tests.dir/Network.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Network.cpp"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/problem10_tests.dir/Network.cpp.o -MF CMakeFiles/problem10_tests.dir/Network.cpp.o.d -o CMakeFiles/problem10_tests.dir/Network.cpp.o -c "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Network.cpp"
 
 CMakeFiles/problem10_tests.dir/Network.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/problem10_tests.dir/Network.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Network.cpp" > CMakeFiles/problem10_tests.dir/Network.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Network.cpp" > CMakeFiles/problem10_tests.dir/Network.cpp.i
 
 CMakeFiles/problem10_tests.dir/Network.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/problem10_tests.dir/Network.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Network.cpp" -o CMakeFiles/problem10_tests.dir/Network.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10/Network.cpp" -o CMakeFiles/problem10_tests.dir/Network.cpp.s
 
 # Object files for target problem10_tests
 problem10_tests_OBJECTS = \
@@ -249,6 +249,6 @@ CMakeFiles/problem10_tests.dir/clean:
 .PHONY : CMakeFiles/problem10_tests.dir/clean
 
 CMakeFiles/problem10_tests.dir/depend:
-	cd "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles/problem10_tests.dir/DependInfo.cmake" "--color=$(COLOR)"
+	cd "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build" "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles/problem10_tests.dir/DependInfo.cmake" "--color=$(COLOR)"
 .PHONY : CMakeFiles/problem10_tests.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10
+# Install script for directory: /mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/Problems/problem10
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

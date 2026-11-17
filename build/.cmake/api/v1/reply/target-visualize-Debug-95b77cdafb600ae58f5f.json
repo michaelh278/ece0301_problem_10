@@ -18,13 +18,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 18,
+				"line" : 32,
 				"parent" : 0
 			}
 		]
 	},
-	"id" : "direct_download::@6890427a1f51a3e7e1df",
-	"name" : "direct_download",
+	"id" : "visualize::@6890427a1f51a3e7e1df",
+	"name" : "visualize",
 	"paths" : 
 	{
 		"build" : ".",
@@ -52,13 +52,13 @@
 		{
 			"backtrace" : 1,
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/direct_download",
+			"path" : "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles/visualize",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/direct_download.rule",
+			"path" : "/mnt/c/Users/kapta/Documents/college/notes/26_fall/Fall 2026 Notes/ECE 0301/problems/problem10/build/CMakeFiles/visualize.rule",
 			"sourceGroupIndex" : 1
 		}
 	],
