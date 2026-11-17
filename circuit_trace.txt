@@ -1,0 +1,142 @@
+P10VIZ	1
+STAGE	1	run
+CALL	vs.get_voltage() while both nodes are at 0 V	5
+SNAP	bench
+NN	2
+NC	3
+NODE	0	0
+NODE	1	5
+COMP	0	V	0	1	5	5	0
+COMP	1	R	0	1	1000	5	0.005
+COMP	2	I	0	1	0.002	5	0.002
+ENDSNAP
+CALL	vs.get_voltage()	5
+CALL	r.get_current()	0.005
+CALL	cs.get_current()	0.002
+CALL	cs.get_voltage()	5
+DO	r.set_value(-5)	!std::invalid_argument: Resistance cannot be negative
+CALL	r.get_value() after r.set_value(-5)	1000
+DO	r.set_value(0)	ok
+DO	r.get_current() with 0 ohm	!std::logic_error: Cannot divide by zero resistance
+DO	r.set_value(250)	ok
+CALL	r.get_current() after r.set_value(250)	0.02
+DO	get_current() on a resistor that is not connected	!std::logic_error: Component terminal(s) not connected
+DO	Component *p = new Resistor(); p->set_value(-1)	!std::invalid_argument: Resistance cannot be negative
+DONE
+
+EXIT	0
+STAGE	2	buildfail
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: warning: relocation against `_ZTV14VoltageDivider' in read-only section `.text._ZN14VoltageDividerD2Ev[_ZN14VoltageDividerD5Ev]'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#1}::operator()() const':
+LOG	driver.cpp:222:(.text+0x115c): undefined reference to `VoltageDivider::VoltageDivider(double, double*, int)'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#2}::operator()() const':
+LOG	driver.cpp:229:(.text+0x11b6): undefined reference to `VoltageDivider::get_num_resistors() const'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#4}::operator()() const':
+LOG	driver.cpp:233:(.text+0x1208): undefined reference to `VoltageDivider::get_loop_current() const'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#5}::operator()() const':
+LOG	driver.cpp:235:(.text+0x122d): undefined reference to `VoltageDivider::get_resistance(int) const'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#6}::operator()() const':
+LOG	driver.cpp:237:(.text+0x1253): undefined reference to `VoltageDivider::get_resistance(int) const'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#7}::operator()() const':
+LOG	driver.cpp:239:(.text+0x1279): undefined reference to `VoltageDivider::get_resistor_voltage(int) const'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#8}::operator()() const':
+LOG	driver.cpp:241:(.text+0x129f): undefined reference to `VoltageDivider::get_resistor_voltage(int) const'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#9}::operator()() const':
+LOG	driver.cpp:243:(.text+0x12c5): undefined reference to `VoltageDivider::get_resistor_voltage(int) const'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#10}::operator()() const':
+LOG	driver.cpp:245:(.text+0x12f7): undefined reference to `VoltageDivider::set_resistance(int, double)'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#11}::operator()() const':
+LOG	driver.cpp:247:(.text+0x1324): undefined reference to `VoltageDivider::set_source_voltage(double)'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#12}::operator()() const':
+LOG	driver.cpp:250:(.text+0x1346): undefined reference to `VoltageDivider::get_loop_current() const'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#13}::operator()() const':
+LOG	driver.cpp:252:(.text+0x136b): undefined reference to `VoltageDivider::get_resistor_voltage(int) const'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#14}::operator()() const':
+LOG	driver.cpp:254:(.text+0x1391): undefined reference to `VoltageDivider::get_resistance(int) const'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#15}::operator()() const':
+LOG	driver.cpp:256:(.text+0x13b7): undefined reference to `VoltageDivider::get_resistance(int) const'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#16}::operator()() const':
+LOG	driver.cpp:258:(.text+0x13dd): undefined reference to `VoltageDivider::get_resistor_voltage(int) const'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#17}::operator()() const':
+LOG	driver.cpp:260:(.text+0x140f): undefined reference to `VoltageDivider::set_resistance(int, double)'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#18}::operator()() const':
+LOG	driver.cpp:262:(.text+0x1441): undefined reference to `VoltageDivider::set_resistance(int, double)'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `main::{lambda()#19}::operator()() const':
+LOG	driver.cpp:267:(.text+0x1483): undefined reference to `VoltageDivider::VoltageDivider(double, double*, int)'
+LOG	/usr/bin/ld: /tmp/ccjfv00F.o: in function `VoltageDivider::~VoltageDivider()':
+LOG	VoltageDivider.hpp:8:(.text._ZN14VoltageDividerD2Ev[_ZN14VoltageDividerD5Ev]+0x13): undefined reference to `vtable for VoltageDivider'
+LOG	/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+LOG	collect2: error: ld returned 1 exit status
+LOG	
+STAGE	3	buildfail
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#1}::operator()() const':
+LOG	driver.cpp:275:(.text+0x115c): undefined reference to `CurrentDivider::CurrentDivider(double, double*, int)'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#2}::operator()() const':
+LOG	driver.cpp:282:(.text+0x11b6): undefined reference to `CurrentDivider::get_num_resistors() const'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#3}::operator()() const':
+LOG	driver.cpp:284:(.text+0x11d6): undefined reference to `CurrentDivider::get_source_current() const'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#4}::operator()() const':
+LOG	driver.cpp:286:(.text+0x11f6): undefined reference to `CurrentDivider::get_resistor_voltage() const'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#5}::operator()() const':
+LOG	driver.cpp:288:(.text+0x121b): undefined reference to `CurrentDivider::get_resistance(int) const'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#6}::operator()() const':
+LOG	driver.cpp:290:(.text+0x1241): undefined reference to `CurrentDivider::get_resistor_current(int) const'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#7}::operator()() const':
+LOG	driver.cpp:292:(.text+0x1267): undefined reference to `CurrentDivider::get_resistor_current(int) const'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#8}::operator()() const':
+LOG	driver.cpp:294:(.text+0x128d): undefined reference to `CurrentDivider::get_resistor_current(int) const'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#9}::operator()() const':
+LOG	driver.cpp:296:(.text+0x12bf): undefined reference to `CurrentDivider::set_resistance(int, double)'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#10}::operator()() const':
+LOG	driver.cpp:298:(.text+0x12ec): undefined reference to `CurrentDivider::set_source_current(double)'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#11}::operator()() const':
+LOG	driver.cpp:301:(.text+0x130e): undefined reference to `CurrentDivider::get_resistor_voltage() const'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#12}::operator()() const':
+LOG	driver.cpp:303:(.text+0x1333): undefined reference to `CurrentDivider::get_resistor_current(int) const'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#13}::operator()() const':
+LOG	driver.cpp:305:(.text+0x1359): undefined reference to `CurrentDivider::get_resistance(int) const'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#14}::operator()() const':
+LOG	driver.cpp:307:(.text+0x137f): undefined reference to `CurrentDivider::get_resistance(int) const'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#15}::operator()() const':
+LOG	driver.cpp:309:(.text+0x13a5): undefined reference to `CurrentDivider::get_resistor_current(int) const'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#16}::operator()() const':
+LOG	driver.cpp:311:(.text+0x13d7): undefined reference to `CurrentDivider::set_resistance(int, double)'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#17}::operator()() const':
+LOG	driver.cpp:313:(.text+0x1409): undefined reference to `CurrentDivider::set_resistance(int, double)'
+LOG	/usr/bin/ld: /tmp/ccLiJK42.o: in function `main::{lambda()#18}::operator()() const':
+LOG	driver.cpp:318:(.text+0x144b): undefined reference to `CurrentDivider::CurrentDivider(double, double*, int)'
+LOG	collect2: error: ld returned 1 exit status
+LOG	
+STAGE	4	buildfail
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: warning: relocation against `_ZTV14VoltageDivider' in read-only section `.text._ZN14VoltageDividerD2Ev[_ZN14VoltageDividerD5Ev]'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `main::{lambda()#1}::operator()() const':
+LOG	driver.cpp:325:(.text+0x1164): undefined reference to `PracticalVsCircuit::PracticalVsCircuit(double, double, double)'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `main::{lambda()#4}::operator()() const':
+LOG	driver.cpp:337:(.text+0x1222): undefined reference to `VoltageDivider::get_source_voltage() const'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `main::{lambda()#5}::operator()() const':
+LOG	driver.cpp:339:(.text+0x1242): undefined reference to `PracticalVsCircuit::get_load_power() const'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `main::{lambda()#6}::operator()() const':
+LOG	driver.cpp:341:(.text+0x126e): undefined reference to `PracticalVsCircuit::set_load(double)'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `main::{lambda()#8}::operator()() const':
+LOG	driver.cpp:345:(.text+0x12c2): undefined reference to `PracticalVsCircuit::get_load_power() const'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `main::{lambda()#9}::operator()() const':
+LOG	driver.cpp:347:(.text+0x12ee): undefined reference to `PracticalVsCircuit::maximum_power_transfer(double)'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `main::{lambda()#10}::operator()() const':
+LOG	driver.cpp:349:(.text+0x132c): undefined reference to `PracticalVsCircuit::maximum_power_transfer(double)'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `main::{lambda()#11}::operator()() const':
+LOG	driver.cpp:352:(.text+0x135e): undefined reference to `PracticalVsCircuit::get_load_power() const'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `main::{lambda()#12}::operator()() const':
+LOG	driver.cpp:354:(.text+0x138a): undefined reference to `PracticalVsCircuit::set_load(double)'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `main::{lambda()#13}::operator()() const':
+LOG	driver.cpp:356:(.text+0x13b8): undefined reference to `PracticalVsCircuit::maximum_power_transfer(double)'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `main::{lambda()#14}::operator()() const':
+LOG	driver.cpp:361:(.text+0x1407): undefined reference to `PracticalVsCircuit::PracticalVsCircuit(double, double, double)'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `main::{lambda()#15}::operator()() const':
+LOG	driver.cpp:363:(.text+0x1475): undefined reference to `PracticalVsCircuit::PracticalVsCircuit(double, double, double)'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `VoltageDivider::~VoltageDivider()':
+LOG	VoltageDivider.hpp:8:(.text._ZN14VoltageDividerD2Ev[_ZN14VoltageDividerD5Ev]+0x13): undefined reference to `vtable for VoltageDivider'
+LOG	/usr/bin/ld: /tmp/ccyQDuAA.o: in function `PracticalVsCircuit::~PracticalVsCircuit()':
+LOG	PracticalVsCircuit.hpp:6:(.text._ZN18PracticalVsCircuitD2Ev[_ZN18PracticalVsCircuitD5Ev]+0x13): undefined reference to `vtable for PracticalVsCircuit'
+LOG	/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
+LOG	collect2: error: ld returned 1 exit status
+LOG	
