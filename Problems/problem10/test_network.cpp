@@ -258,6 +258,7 @@ TEST_CASE("Network: Test VoltageDivider", "[network]")
   REQUIRE_THROWS_AS(VoltageDivider(voltage, inv_res, num), std::invalid_argument);
 }
 
+// Initialization and behaviors of current divider network
 TEST_CASE("Network: Test CurrentDivider", "[network]")
 {
   double current = 0.006;
@@ -311,4 +312,28 @@ TEST_CASE("Network: Test CurrentDivider", "[network]")
   // Test invalid initialization with negative resistances
   double inv_res[num] = {200.0, -400.0};
   REQUIRE_THROWS_AS(CurrentDivider(current, inv_res, num), std::invalid_argument);
+}
+
+// Initialization and behaviors of practical Vs circuit
+TEST_CASE("Network: Test PracticalVsCircuit", "[network]") {
+  double voltage = 5.0;
+  double rs = 200;
+  double rl1 = 400;
+  PracticalVsCircuit pvs(voltage, rs, rl1);
+  
+  // Verify source voltage returns voltage across load
+  double expected_vs = 5.0 / 3.0;
+  REQUIRE(compare_double(pvs.get_source_voltage(), expected_vs));
+  
+  // Verify power is correct
+  double expected_power = 1.0 / 144.0;
+  REQUIRE(compare_double(pvs.get_load_power(), expected_power));
+  
+  // RS and RL are different: not max power
+  double rl2 = 400;
+  REQUIRE_FALSE(pvs.maximum_power_transfer(rl2));
+  
+  // RS and RL are the same: max power
+  double rl3 = 200;
+  REQUIRE(pvs.maximum_power_transfer(rl3));
 }
