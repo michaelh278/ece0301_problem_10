@@ -322,11 +322,12 @@ TEST_CASE("Network: Test PracticalVsCircuit", "[network]") {
   PracticalVsCircuit pvs(voltage, rs, rl1);
   
   // Verify source voltage returns voltage across load
-  double expected_vs = 5.0 / 3.0;
+  double expected_vs = 10.0 / 3.0;
   REQUIRE(compare_double(pvs.get_source_voltage(), expected_vs));
   
   // Verify power is correct
-  double expected_power = 1.0 / 144.0;
+  double expected_power = 1.0 / 36.0;
+  double boink = pvs.get_load_power();
   REQUIRE(compare_double(pvs.get_load_power(), expected_power));
   
   // RS and RL are different: not max power

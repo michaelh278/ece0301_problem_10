@@ -176,32 +176,91 @@ DO	CurrentDivider(0.006, res, 0)	!std::invalid_argument: Must have at least one 
 DONE
 
 EXIT	0
-STAGE	4	buildfail
-LOG	/usr/bin/ld: /tmp/cczP4v4G.o: warning: relocation against `_ZTV18PracticalVsCircuit' in read-only section `.text._ZN18PracticalVsCircuitD2Ev[_ZN18PracticalVsCircuitD5Ev]'
-LOG	/usr/bin/ld: /tmp/cczP4v4G.o: in function `main::{lambda()#1}::operator()() const':
-LOG	driver.cpp:325:(.text+0x1164): undefined reference to `PracticalVsCircuit::PracticalVsCircuit(double, double, double)'
-LOG	/usr/bin/ld: /tmp/cczP4v4G.o: in function `main::{lambda()#5}::operator()() const':
-LOG	driver.cpp:339:(.text+0x1242): undefined reference to `PracticalVsCircuit::get_load_power() const'
-LOG	/usr/bin/ld: /tmp/cczP4v4G.o: in function `main::{lambda()#6}::operator()() const':
-LOG	driver.cpp:341:(.text+0x126e): undefined reference to `PracticalVsCircuit::set_load(double)'
-LOG	/usr/bin/ld: /tmp/cczP4v4G.o: in function `main::{lambda()#8}::operator()() const':
-LOG	driver.cpp:345:(.text+0x12c2): undefined reference to `PracticalVsCircuit::get_load_power() const'
-LOG	/usr/bin/ld: /tmp/cczP4v4G.o: in function `main::{lambda()#9}::operator()() const':
-LOG	driver.cpp:347:(.text+0x12ee): undefined reference to `PracticalVsCircuit::maximum_power_transfer(double)'
-LOG	/usr/bin/ld: /tmp/cczP4v4G.o: in function `main::{lambda()#10}::operator()() const':
-LOG	driver.cpp:349:(.text+0x132c): undefined reference to `PracticalVsCircuit::maximum_power_transfer(double)'
-LOG	/usr/bin/ld: /tmp/cczP4v4G.o: in function `main::{lambda()#11}::operator()() const':
-LOG	driver.cpp:352:(.text+0x135e): undefined reference to `PracticalVsCircuit::get_load_power() const'
-LOG	/usr/bin/ld: /tmp/cczP4v4G.o: in function `main::{lambda()#12}::operator()() const':
-LOG	driver.cpp:354:(.text+0x138a): undefined reference to `PracticalVsCircuit::set_load(double)'
-LOG	/usr/bin/ld: /tmp/cczP4v4G.o: in function `main::{lambda()#13}::operator()() const':
-LOG	driver.cpp:356:(.text+0x13b8): undefined reference to `PracticalVsCircuit::maximum_power_transfer(double)'
-LOG	/usr/bin/ld: /tmp/cczP4v4G.o: in function `main::{lambda()#14}::operator()() const':
-LOG	driver.cpp:361:(.text+0x1407): undefined reference to `PracticalVsCircuit::PracticalVsCircuit(double, double, double)'
-LOG	/usr/bin/ld: /tmp/cczP4v4G.o: in function `main::{lambda()#15}::operator()() const':
-LOG	driver.cpp:363:(.text+0x1475): undefined reference to `PracticalVsCircuit::PracticalVsCircuit(double, double, double)'
-LOG	/usr/bin/ld: /tmp/cczP4v4G.o: in function `PracticalVsCircuit::~PracticalVsCircuit()':
-LOG	PracticalVsCircuit.hpp:6:(.text._ZN18PracticalVsCircuitD2Ev[_ZN18PracticalVsCircuitD5Ev]+0x13): undefined reference to `vtable for PracticalVsCircuit'
-LOG	/usr/bin/ld: warning: creating DT_TEXTREL in a PIE
-LOG	collect2: error: ld returned 1 exit status
-LOG	
+STAGE	4	run
+CTOR	begin
+TRACE	network	3	3
+TRACE	set_component	0	13VoltageSource	ok
+TRACE	set_component_value	0	12	ok
+TRACE	connect_a	0	0	ok
+TRACE	connect_b	0	1	ok
+TRACE	set_component	1	8Resistor	ok
+TRACE	set_component_value	1	1000	ok
+TRACE	connect_b	1	1	ok
+TRACE	connect_a	1	2	ok
+TRACE	set_component	2	8Resistor	ok
+TRACE	set_component_value	2	2000	ok
+TRACE	connect_b	2	2	ok
+TRACE	connect_a	2	0	ok
+TRACE	set_node_voltage	0	0	ok
+TRACE	set_node_voltage	1	12	ok
+TRACE	set_node_voltage	2	8	ok
+CTOR	ok
+SNAP	constructed
+NN	3
+NC	3
+NODE	0	0
+NODE	1	12
+NODE	2	8
+COMP	0	V	0	1	12	12	0
+COMP	1	R	2	1	1000	4	0.004
+COMP	2	R	0	2	2000	8	0.004
+ENDSNAP
+CALL	get_source_voltage()	8
+CALL	get_source_voltage() through a VoltageDivider *	8
+CALL	ptr->VoltageDivider::get_source_voltage()	12
+CALL	get_load_power()	0.032
+TRACE	set_component_value	2	3000	ok
+TRACE	set_node_voltage	0	0	ok
+TRACE	set_node_voltage	1	12	ok
+TRACE	set_node_voltage	2	9	ok
+DO	set_load(3000)	ok
+CALL	get_source_voltage() after set_load(3000)	9
+CALL	get_load_power() after set_load(3000)	0.027
+TRACE	set_component_value	2	900	ok
+TRACE	set_node_voltage	0	0	ok
+TRACE	set_node_voltage	1	12	ok
+TRACE	set_node_voltage	2	5.68421052631579	ok
+CALL	maximum_power_transfer(900)	0
+TRACE	set_component_value	2	1000	ok
+TRACE	set_node_voltage	0	0	ok
+TRACE	set_node_voltage	1	12	ok
+TRACE	set_node_voltage	2	6	ok
+CALL	maximum_power_transfer(1000)	1
+SNAP	matched
+NN	3
+NC	3
+NODE	0	0
+NODE	1	12
+NODE	2	6
+COMP	0	V	0	1	12	12	0
+COMP	1	R	2	1	1000	6	0.006
+COMP	2	R	0	2	1000	6	0.006
+ENDSNAP
+CALL	get_load_power() with the matched load	0.036
+TRACE	set_component_value	2	-100	!Resistance cannot be negative
+DO	set_load(-100)	!std::invalid_argument: Resistance cannot be negative
+TRACE	set_component_value	2	-100	!Resistance cannot be negative
+DO	maximum_power_transfer(-100)	!std::invalid_argument: Resistance cannot be negative
+TRACE	network	3	3
+TRACE	set_component	0	13VoltageSource	ok
+TRACE	set_component_value	0	12	ok
+TRACE	connect_a	0	0	ok
+TRACE	connect_b	0	1	ok
+TRACE	set_component	1	8Resistor	ok
+TRACE	set_component_value	1	-1000	!Resistance cannot be negative
+DO	PracticalVsCircuit(12, -1000, 2000)	!std::invalid_argument: Resistance cannot be negative
+TRACE	network	3	3
+TRACE	set_component	0	13VoltageSource	ok
+TRACE	set_component_value	0	12	ok
+TRACE	connect_a	0	0	ok
+TRACE	connect_b	0	1	ok
+TRACE	set_component	1	8Resistor	ok
+TRACE	set_component_value	1	1000	ok
+TRACE	connect_b	1	1	ok
+TRACE	connect_a	1	2	ok
+TRACE	set_component	2	8Resistor	ok
+TRACE	set_component_value	2	-100	!Resistance cannot be negative
+DO	PracticalVsCircuit(12, 1000, -100)	!std::invalid_argument: Resistance cannot be negative
+DONE
+
+EXIT	0

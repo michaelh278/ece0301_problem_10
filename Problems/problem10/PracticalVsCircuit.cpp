@@ -29,11 +29,12 @@ bool PracticalVsCircuit::maximum_power_transfer(double rl) {
     set_load(rl);
     
     // Check whether new load power = max power
+    double load_power = get_load_power();
     // Pmax = VS^2 / 4RS
     // VS cannot be gotten through get_source_voltage
     // anymore, so I'll get it with node voltage instead
     double max_power = std::pow(get_node_voltage(1), 2) / (4 * get_resistance(0));
     
     // Check whether values are roughly equal
-    return std::abs(get_load_power() - max_power) < 1e-9;
+    return std::abs(load_power - max_power) < 1e-9;
 }

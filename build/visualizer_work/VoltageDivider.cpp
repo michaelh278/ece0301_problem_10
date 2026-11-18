@@ -53,7 +53,7 @@ void VoltageDivider::balance_voltages() {
     for(int i = 1; i < get_num_nodes() - 1; i++) {
         double resistance_i = get_resistance(i - 1);
         double prev_node_voltage = get_node_voltage(i);
-        double voltage_drop = get_source_voltage() * resistance_i / total_resistance;
+        double voltage_drop = get_component_voltage(0) * resistance_i / total_resistance; // can't use get_source_voltage because it's overridden in PracticalVsCircuit
         double new_node_voltage = prev_node_voltage - voltage_drop;
         set_node_voltage(i + 1, new_node_voltage);
     }
