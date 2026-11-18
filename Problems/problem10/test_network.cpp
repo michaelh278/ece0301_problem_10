@@ -258,12 +258,57 @@ TEST_CASE("Network: Test VoltageDivider", "[network]")
   REQUIRE_THROWS_AS(VoltageDivider(voltage, inv_res, num), std::invalid_argument);
 }
 
-// TEST_CASE("Network: Test CurrentDivider", "[network]")
-// {
-//   double current = 0.006;
-//   const int num = 2;
-//   double res[num] = {15000, 75000};
-//   CurrentDivider div(current, res, num);
+TEST_CASE("Network: Test CurrentDivider", "[network]")
+{
+  double current = 0.006;
+  const int num = 2;
+  double res[num] = {15000, 75000};
+  CurrentDivider div(current, res, num);
 
-//   // TODO
-// }
+  // Similar test cases to voltage divider
+  
+  // Verify values have been initialized correctly
+  REQUIRE(compare_double(div.get_source_current(), current));
+  REQUIRE(div.get_num_resistors() == num);
+  for(int i = 0; i < num; i++) {
+    REQUIRE(compare_double(div.get_resistance(i), res[i]));
+  }
+  
+  // Verify circuit has been balanced correctly
+  double expected_node_v = 75.0;
+  REQUIRE(compare_double(div.get_resistor_voltage(), expected_node_v));
+  double expected_res_currs[num] = {0.005, 0.001};
+  for(int i = 0; i < num; i++) {
+    REQUIRE(compare_double(div.get_resistor_current(i), expected_res_currs[i]));
+  }
+  
+  // Change current and re-check
+  double new_c = 0.012;
+  div.set_source_current(new_c);
+  double new_exp_res_currs[num] = {0.010, 0.002};
+  for(int i = 0; i < num; i++) {
+    REQUIRE(compare_double(div.get_resistor_current(i), new_exp_res_currs[i]));
+  }
+  
+  // Change resistor value and re-check
+  double new_r = 75000.0;
+  div.set_resistance(0, new_r);
+  double new_exp_res_currs_2[num] = {0.006, 0.006};
+  for(int i = 0; i < num; i++) {
+    REQUIRE(compare_double(div.get_resistor_current(i), new_exp_res_currs_2[i]));
+  }
+  
+  // Test invalid resistor indices
+  REQUIRE_THROWS_AS(div.get_resistance(-1), std::out_of_range);
+  REQUIRE_THROWS_AS(div.get_resistance(num), std::out_of_range);
+  REQUIRE_THROWS_AS(div.get_resistor_current(-1), std::out_of_range);
+  REQUIRE_THROWS_AS(div.get_resistor_current(num), std::out_of_range);
+
+  // Test invalid initialization with < 1 resistor
+  REQUIRE_THROWS_AS(CurrentDivider(current, res, 0), std::invalid_argument);
+  REQUIRE_THROWS_AS(CurrentDivider(current, res, -1), std::invalid_argument);
+  
+  // Test invalid initialization with negative resistances
+  double inv_res[num] = {200.0, -400.0};
+  REQUIRE_THROWS_AS(CurrentDivider(current, inv_res, num), std::invalid_argument);
+}

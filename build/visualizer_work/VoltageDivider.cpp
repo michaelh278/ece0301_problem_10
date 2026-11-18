@@ -45,7 +45,7 @@ void VoltageDivider::balance_voltages() {
     // Sum of all resistances for denominator
     double total_resistance = 0.0;
     for(int i = 0; i < get_num_nodes() - 1; i++) {
-        total_resistance += get_component_value(i + 1);
+        total_resistance += get_resistance(i);
     }
     
     // Voltage of each node depends on the
