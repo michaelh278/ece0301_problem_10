@@ -211,7 +211,7 @@ TEST_CASE("Network: Test VoltageDivider", "[network]")
   REQUIRE(compare_double(div.get_source_voltage(), voltage));
   REQUIRE(div.get_num_resistors() == num);
   for(int i = 0; i < num; i++) {
-    REQUIRE(compare_double(div.get_component_value(i + 1), res[i]));
+    REQUIRE(compare_double(div.get_resistance(i), res[i]));
   }
   
   // Verify circuit has been balanced correctly
@@ -240,12 +240,14 @@ TEST_CASE("Network: Test VoltageDivider", "[network]")
   // Change resistor value and re-check
   double new_r = 400.0;
   div.set_resistance(0, new_r);
-  REQUIRE(compare_double(div.get_component_value(1), 400.0));
+  REQUIRE(compare_double(div.get_resistance(0), 400.0));
   REQUIRE(compare_double(div.get_node_voltage(2), 3.0));
   
   // Test invalid resistor indices
-  REQUIRE_THROWS_AS(div.get_resistor_voltage(-1), std::invalid_argument);
-  REQUIRE_THROWS_AS(div.get_resistor_voltage(num), std::invalid_argument);
+  REQUIRE_THROWS_AS(div.get_resistance(-1), std::out_of_range);
+  REQUIRE_THROWS_AS(div.get_resistance(num), std::out_of_range);
+  REQUIRE_THROWS_AS(div.get_resistor_voltage(-1), std::out_of_range);
+  REQUIRE_THROWS_AS(div.get_resistor_voltage(num), std::out_of_range);
 
   // Test invalid initialization with < 1 resistor
   REQUIRE_THROWS_AS(VoltageDivider(voltage, res, 0), std::invalid_argument);

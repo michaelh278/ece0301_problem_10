@@ -72,7 +72,7 @@ double VoltageDivider::get_source_voltage() const {
 double VoltageDivider::get_resistance(int idx) const {
     // Reject invalid indices
     if(idx < 0 || idx >= get_num_components() - 1) {
-        throw std::invalid_argument("Resistor index out of range");
+        throw std::out_of_range("Resistor index out of range");
     }
     
     return get_component_value(idx + 1);
@@ -81,7 +81,7 @@ double VoltageDivider::get_resistance(int idx) const {
 double VoltageDivider::get_resistor_voltage(int idx) const {
     // Reject invalid indices
     if(idx < 0 || idx >= get_num_components() - 1) {
-        throw std::invalid_argument("Resistor index out of range");
+        throw std::out_of_range("Resistor index out of range");
     }
     
     return get_component_voltage(idx + 1);
@@ -105,7 +105,7 @@ void VoltageDivider::set_source_voltage(double v) {
 void VoltageDivider::set_resistance(int idx, double r) {
     // Reject invalid indices
     if(idx < 0 || idx >= get_num_components() - 1) {
-        throw std::invalid_argument("Resistor index out of range");
+        throw std::out_of_range("Resistor index out of range");
     }
     
     set_component_value(idx + 1, r);
