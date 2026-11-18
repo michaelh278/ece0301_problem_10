@@ -199,15 +199,62 @@ TEST_CASE("Network: Test overriding and dynamic binding", "[network]")
 
 // Uncomment these partial test cases when you are ready to test the dividers.
 
-// TEST_CASE("Network: Test VoltageDivider", "[network]")
-// {
-//   double voltage = 5.0;
-//   const int num = 2;
-//   double res[num] = {200, 400};
-//   VoltageDivider div(voltage, res, num);
+// Initialization and behaviors of voltage divider network
+TEST_CASE("Network: Test VoltageDivider", "[network]")
+{
+  double voltage = 5.0;
+  const int num = 2;
+  double res[num] = {200, 400};
+  VoltageDivider div(voltage, res, num);
+  
+  // Verify values have been initialized correctly
+  REQUIRE(compare_double(div.get_source_voltage(), voltage));
+  REQUIRE(div.get_num_resistors() == num);
+  for(int i = 0; i < num; i++) {
+    REQUIRE(compare_double(div.get_component_value(i + 1), res[i]));
+  }
+  
+  // Verify circuit has been balanced correctly
+  double expected_node_vs[num + 1] = {0.0, 5.0, 10.0 / 3.0};
+  for(int i = 0; i < num + 1; i++) {
+    REQUIRE(compare_double(div.get_node_voltage(i), expected_node_vs[i]));
+  }
+  double expected_res_vs[num] = {5.0 / 3.0, 10.0 / 3.0};
+  for(int i = 0; i < num; i++) {
+    REQUIRE(compare_double(div.get_resistor_voltage(i), expected_res_vs[i]));
+  }
+  double expected_curr = 5.0 / 600.0;
+  REQUIRE(compare_double(div.get_loop_current(), expected_curr));
+  for(int i = 0; i < num; i++) {
+    REQUIRE(compare_double(div.get_component_current(i + 1), expected_curr));
+  }
+  
+  // Change voltage and re-check
+  double new_v = 6.0;
+  div.set_source_voltage(new_v);
+  double new_exp_node_vs[num + 1] = {0.0, 6.0, 4.0};
+  for(int i = 0; i < num + 1; i++) {
+    REQUIRE(compare_double(div.get_node_voltage(i), new_exp_node_vs[i]));
+  }
+  
+  // Change resistor value and re-check
+  double new_r = 400.0;
+  div.set_resistance(0, new_r);
+  REQUIRE(compare_double(div.get_component_value(1), 400.0));
+  REQUIRE(compare_double(div.get_node_voltage(2), 3.0));
+  
+  // Test invalid resistor indices
+  REQUIRE_THROWS_AS(div.get_resistor_voltage(-1), std::invalid_argument);
+  REQUIRE_THROWS_AS(div.get_resistor_voltage(num), std::invalid_argument);
 
-//   // TODO
-// }
+  // Test invalid initialization with < 1 resistor
+  REQUIRE_THROWS_AS(VoltageDivider(voltage, res, 0), std::invalid_argument);
+  REQUIRE_THROWS_AS(VoltageDivider(voltage, res, -1), std::invalid_argument);
+  
+  // Test invalid initialization with negative resistances
+  double inv_res[num] = {200.0, -400.0};
+  REQUIRE_THROWS_AS(VoltageDivider(voltage, inv_res, num), std::invalid_argument);
+}
 
 // TEST_CASE("Network: Test CurrentDivider", "[network]")
 // {

@@ -9,6 +9,9 @@ class VoltageDivider : public Network
 {
 private:
   // TODO: little to no here, only add private ones when necessary
+  
+  // Method to balance node voltages
+  void balance_voltages();
 
 public:
   VoltageDivider(double v, double res[], int num_res);
