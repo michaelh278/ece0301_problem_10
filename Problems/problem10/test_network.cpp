@@ -338,3 +338,30 @@ TEST_CASE("Network: Test PracticalVsCircuit", "[network]") {
   double rl3 = 200;
   REQUIRE(pvs.maximum_power_transfer(rl3));
 }
+
+// Pointers and virtual functions
+TEST_CASE("Network: Test behavior of derived class pointers", "[network]") {
+  double voltage = 5.0;
+  double rs = 200;
+  double rl = 400;
+  
+  // Dynamic vs static
+  VoltageDivider *ptr1 = new PracticalVsCircuit(voltage, rs, rl);
+  double load_voltage = 10.0 / 3.0;
+  REQUIRE(compare_double(ptr1->get_source_voltage(), load_voltage));
+  REQUIRE(compare_double(ptr1->VoltageDivider::get_source_voltage(), voltage));
+  
+  Network *ptr2 = new PracticalVsCircuit(voltage, rs, rl);
+  REQUIRE(compare_double(ptr2->get_node_voltage(1), voltage));
+  
+  // Free dynamic memory
+  delete ptr1;
+  delete ptr2;
+  
+  // Reference and pointer
+  Resistor res;
+  Component &res_ref = res;
+  Component *res_ptr = &res;
+  REQUIRE_THROWS_AS(res_ref.set_value(-1.0), std::invalid_argument);
+  REQUIRE_THROWS_AS(res_ptr->set_value(-1.0), std::invalid_argument);
+}
